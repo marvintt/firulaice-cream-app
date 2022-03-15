@@ -4,7 +4,7 @@ import Navbar from '../navbar/Navbar'
 
 function Header() {
   return (
-    <div className=' bg-green1 h-20 '>
+    <div className='sticky top-0  bg-green1 h-20 '>
         <Navbar />
     </div>
 

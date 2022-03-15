@@ -1,10 +1,15 @@
-import { faHome } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FaHome } from 'react-icons/fa';
+import { IoCart } from 'react-icons/io';
+
+
 import React from 'react'
 
-function ButtonIcon() {
+function ButtonIcon(props) {
+  const {icons, name} = props;
+  console.log(icons)
+
   return (
-    <button className="w-10 h-10 leading-3 text-3xl"><FontAwesomeIcon icon={faHome} /><span className="text-xs align-top">inicio</span></button>
+    <button className="w-10 h-10 leading-3 text-3xl"><icons.props /><span className="text-xs align-top">{name}</span></button>
   )
 }
 
